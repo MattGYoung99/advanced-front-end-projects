@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Pomodoro Clock FCC</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <p id="title">Pomodoro Clock</p>
+<div id="pomodoro" class="container-fluid">
+  <div class="row">
+   <div id="test1" class="col-sm-4">
+    <p id="sessionHead">Session Timer</p>
+     <div id="session" class="row">
+       <button id="sess1" type="button" class="btn btn-danger">-</button>
+       <input id="sessTime" type="form" value="25"></input>
+       <button id="sess2" type="button" class="btn btn-success">+</button>
+     </div>
+    <p id="breakHead">Break Timer</p>
+    <div id="break" class="row">
+       <button  id="break1" type="button" class="btn btn-danger">-</button>
+       <input id="breakTime" type="form" value="5"></input>
+       <button  id="break2" type="button" class="btn btn-success">+</button>
+    </div>
+   </div>
+  <div id="test2" class="col-sm-4">
+    <div id="timer" class="container-fluid">
+     <p id="time">00:00</p>
+    </div>
+  </div>
+   <div id="test3" class="col-sm-4">
+      <div id="btns" class="row">
+        <div class="col-sm-4">
+        <button id="play" onclick="pomodoroTime(sessSum)"class="btn btn-success">Play <i class="fa fa-play"></i></button>
+        </div>
+        <div class="col-sm-4">
+        <button id="pauseTime"  class="btn btn-info">Stop <i class="fa fa-pause"></i></button>
+        </div>
+        <div class="col-sm-4">
+        <button id="reset" class="btn btn-danger">Reset <i class="fa fa-refresh"></i></button>
+        </div>
+      </div>
+   </div>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
+</html>
