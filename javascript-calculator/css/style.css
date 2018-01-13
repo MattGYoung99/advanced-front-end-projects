@@ -1,0 +1,51 @@
+body {
+  background-color: #4D4D4D;
+  font-family: 'Raleway', sans-serif;
+  font-color: black;
+}
+#title {
+  text-align: center;
+  color: #fff;
+}
+#myScreen {
+  border-radius: 4px;
+}
+p {
+  text-align: center;
+}
+button {
+  margin: 0px 4px 0px 4px;
+  padding: 0px 13px 0px 13px;
+  border-radius: 2px;
+  color: #000;
+  background-color: #FF3600;
+}
+#equal {
+}
+#clear {
+}
+button:focus {
+  outline:none;
+}
+
+input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #000;
+  border-bottom: 1px solid black;
+}
+input:focus {
+  outline:none;
+}
+
+
+#calculator {
+  position: absolute;
+  width: 25em;
+  height: 18em;
+  padding: 15px 0px 15px 0px;
+  top: 25%;
+  right: 0;
+  left: 0;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript Calculator FCC</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <h1 id="title">JS Calculator</h1>
+<div class="container" id="calculator">
+<p><input type="text" id="myScreen" value="" onkeypress="return false;"></p>
+<p>
+<button class="btn btn-danger" id='one' onclick="sum(1)">1</button>
+<button class="btn btn-danger" id='two' onclick="sum(2)">2</button>
+<button class="btn btn-danger" id='three' onclick="sum(3)">3</button>
+<button class="btn btn-danger" id='Multiply' onclick="sum('*')">×</button>
+</p><p>
+<button class="btn btn-danger" id='four' onclick="sum(4)">4</button>
+<button class="btn btn-danger" id='five' onclick="sum(5)">5</button>
+<button class="btn btn-danger" id='six' onclick="sum(6)">6</button>
+<button class="btn btn-danger" id="Divide" onclick="sum('/')">÷</button>
+</p><p>
+<button class="btn btn-danger" id='seven' onclick="sum(7)">7</button>
+<button class="btn btn-danger" id='eight' onclick="sum(8)">8</button>
+<button class="btn btn-danger" id='nine' onclick="sum(9)">9</button>
+<button class="btn btn-danger" id="Add" onclick="sum('+')">+</button>
+</p><p>
+<button class="btn btn-danger" id='zero' onclick="sum(0)">0</button>
+<button class="btn btn-info" id="clear" onclick="sum('')">e</button>
+<button class="btn btn-warning" id="equal" onclick="sum('=')">=</button>
+<button class="btn btn-danger" id="Subtract" onclick="sum('-')">-</button>
+</p>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
