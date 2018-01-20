@@ -5,7 +5,7 @@ function reset() {
   }
   origBoard = [0,1,2,3,4,5,6,7,8];
   round = 0;
-  // $('#TTT').hide('slow');
+  $('#TTT').hide('slow');
   $('#q').show('slow');
 }
 function boardSpots() {
