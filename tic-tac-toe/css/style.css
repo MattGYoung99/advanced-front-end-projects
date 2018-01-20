@@ -1,26 +1,30 @@
 body  {
-  background-color: #fff;
+  background-color: #000;
 }
 h1 {
   text-align: center;
 }
 .container-fluid {
+  color: #fff;
+  background-color: #000;
   text-align: center;
   width: 50%;
   padding: 10px;
   font-size: 30px;
 }
 .col {
+  background-color: #000;
   margin: 5px 5px 5px 5px;
   min-height: 5em;
-  max-height: 8em;
   max-width: 33%;
-  border: 1px solid #fff;
+  border: 1px solid #FFF; 
   line-height: 5em;
-  color: #000;
-  background-color: #A7A7A7;
+  color: #FFF;
 }
 button {
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #fff;
   min-height: 5em;
   min-width: 5em;
   border: 1px solid;

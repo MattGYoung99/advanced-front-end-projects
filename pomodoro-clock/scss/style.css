@@ -1,0 +1,103 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: blue;
+}
+
+#title {
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+input {
+  color: #fff;
+  font-size: 25px;
+  width: 3em;
+  height: 1.3em;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid #000;
+  border-color: #000;
+  background-color: transparent;
+}
+
+p {
+  text-align: center;
+}
+
+#timer {
+  color: #fff;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 18em;
+  width: 18em;
+  border-radius: 150px;
+  border-style: solid;
+  background-color: transparent;
+  border-color: #000;
+}
+
+#time {
+  font-size: 50px;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button {
+  height: 2em;
+}
+
+#session {
+  margin: 0;
+  background: transparent;
+  position: absolute;
+  top: 40%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+
+#sessionHead {
+  color: #fff;
+  font-size: 20px;
+  margin: 0;
+  position: absolute;
+  top: 30%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+
+#break {
+  margin: 0;
+  background: transparent;
+  position: absolute;
+  top: 65%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+
+#breakHead {
+  color: #fff;
+  font-size: 20px;
+  margin: 0;
+  position: absolute;
+  top: 55%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+
+#btns {
+  margin: 10;
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*# sourceMappingURL=style.css.map */
