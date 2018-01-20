@@ -1,12 +1,11 @@
 var huPlayer; var aiPlayer; var origBoard; var round = 0;
 function reset() {
-  
   for (var x=0;x<9;x++) {
     document.getElementById(x).innerHTML = '';
   }
   origBoard = [0,1,2,3,4,5,6,7,8];
   round = 0;
-  $('#TTT').hide('slow');
+  // $('#TTT').hide('slow');
   $('#q').show('slow');
 }
 function boardSpots() {
@@ -86,16 +85,6 @@ function aiTurn() {
           round++;
        }
    }
-  if (win(origBoard, huPlayer)) { 
-    alert("You Win!") 
-    reset();
-  } else if (win(origBoard, aiPlayer)) {
-    alert("You lose!");
-    reset();
-  } else if (round > 8) {
-    alert("Tie!");
-    reset();
-  }
 }
 function huTurn(element) {
   var $hu = document.getElementById(element.id);
@@ -115,9 +104,10 @@ function huTurn(element) {
   } else if (round > 8) {
     alert("Tie!");
     reset();
+  } else {
+    aiTurn();
   }
 }
-
 
 $(document).ready(function() {
  $('#TTT').hide();
@@ -133,6 +123,5 @@ $(document).ready(function() {
   });
  $('.box').click(function() {
     huTurn(this);
-    aiTurn();
   });
 });
