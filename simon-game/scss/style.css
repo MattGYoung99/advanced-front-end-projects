@@ -1,0 +1,27 @@
+button {
+  height: 5em;
+  width: 5em;
+  border: 1px solid #000;
+  border-radius: 40px;
+}
+
+button:focus {
+  outline: none;
+}
+
+#one {
+  background-color: #F9E201;
+}
+
+#two {
+  background-color: #006FE5;
+}
+
+#three {
+  background-color: #E50000;
+}
+
+#four {
+  background-color: #42E500;
+}
+/*# sourceMappingURL=style.css.map */

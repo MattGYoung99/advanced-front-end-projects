@@ -1,7 +1,7 @@
 body {
   background-color: #4D4D4D;
   font-family: 'Raleway', sans-serif;
-  font-color: black;
+  color: black;
 }
 #title {
   text-align: center;
@@ -19,10 +19,6 @@ button {
   border-radius: 2px;
   color: #000;
   background-color: #FF3600;
-}
-#equal {
-}
-#clear {
 }
 button:focus {
   outline:none;
