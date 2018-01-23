@@ -1,6 +1,6 @@
-var round = 0, color, sequence=[], x=0, turn = 0;
-function generateSequence() {
-   turn = 0;
+var round = 0, color, sequence=[], x=0;
+
+function addRound() {
    color = Math.round(Math.random()*3);
    if (color === 0) {
     sequence.push('one');
@@ -19,20 +19,24 @@ function reset() {
   round = sequence.length;
   document.getElementById('c').value = sequence.length;
 }
-function game(level) {
+function game(arr) {
   var elem = document.querySelectorAll('.gameButton');
-  for (var k=0;k<elem.length;k++) {
-    elem[k].addEventListener("click", function() {
-      if (this.id == sequence[level]) {
-        console.log(sequence.level)
-        console.log('got it');
-        turn++
-      } else {
-        console.log(sequence.level)
-        console.log('try again');
-        reset();
-      }
-    })
+  if (arr.length === 0) {
+    beginRound();
+  } else {
+    for (var k=0;k<elem.length;k++) {
+      elem[k].addEventListener("click", function() {
+        if (this.id == arr[0]) {
+          console.log('right!');
+          arr = arr.splice(1);
+          console.log(arr);
+          game(arr);
+        } else {
+          console.log('oops, wrong button!');
+          reset();
+        }
+      })
+    }
   }
 }
 function loopIt() {
@@ -51,9 +55,10 @@ function loopIt() {
     $('#one, #two, #three, #four, #strt').prop('disabled',false);
   }
 }
-function start() {
-  generateSequence();
+function beginRound() {
+  addRound();
   loopIt();
-  game(turn);
+  game(sequence);
 }
+
 
