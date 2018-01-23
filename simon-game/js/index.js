@@ -28,7 +28,6 @@ function game(arr) {
       elem[k].addEventListener("click", function() {
         if (this.id == arr[0]) {
           console.log('right!');
-          arr = arr.splice(1);
           console.log(arr);
           game(arr);
         } else {
