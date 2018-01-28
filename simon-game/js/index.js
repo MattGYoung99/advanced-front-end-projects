@@ -1,6 +1,11 @@
-var round = 0, sequence=[], x=0;
+var round = 0, x=0, currSequence;
+const sequence = [];
+var checkToAddRound = function(arr) {
+  return (arr.length === 0 ? (true) : (false)); 
+}
 function reset() {
   sequence = [];
+  currSequence = sequence;
   round = sequence.length;
   document.getElementById('c').value = sequence.length;
 }
@@ -36,14 +41,24 @@ function addRound() {
    break;
  }
  loopIt();
+ currSequence = sequence;
 }
 function game($element) {
-  var elem = document.querySelectorAll('.gameButton');
-  console.log(sequence);
-  console.log($element.id);
-}
-function beginRound() {
-  addRound();
+  console.log(sequence, currSequence);
+  if (checkToAddRound(currSequence)) {
+    console.log(sequence, currSequence);
+    addRound();
+  } else {
+    if ($element.id === currSequence[0]) {
+      currSequence.shift();
+      console.log('Right!');
+      console.log(sequence, currSequence);
+    } else {
+      console.log('Wrong!');
+      console.log(sequence, currSequence);
+      reset();
+    }
+  }
 }
 
 
