@@ -10,23 +10,18 @@
 </head>
 
 <body>
-  <button id="reset" onclick="reset()">reset</button>
+  <button id="reset" onclick="reset(true)">reset</button>
   <button id="strt" onclick="addRound()">start</button>
   <input id="c" value="0"></input>
   <button class="gameButton one" onclick="game(this)" id="one">yellow</button>
   <button class="gameButton two" onclick="game(this)" id="two">blue</button>
   <button class="gameButton three" onclick="game(this)" id="three">red</button>
   <button class="gameButton four" onclick="game(this)" id="four">green</button>
-  <form>
-      <input id="celciusfahrenheit" type="checkbox" checked="checked" data-toggle="toggle" data-onstyle="info" data-offstyle="warning" data-on="C°" data-off="F°" data-style="slow">
-  </form>
+  <input id="strictmode" type="checkbox" checked="checked" data-toggle="toggle" data-onstyle="info" data-offstyle="danger" data-on="ON" data-off="OFF" data-style="slow">
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
   <script src='https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js'></script>
-  <script  src="js/index.js"></script>
+  <script src="js/index.js"></script>
 </body>
 </html>
-
-<!-- 
--->
