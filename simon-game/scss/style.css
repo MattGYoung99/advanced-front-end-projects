@@ -1,27 +1,30 @@
 button {
   height: 5em;
   width: 5em;
-  border: 1px solid #000;
-  border-radius: 40px;
 }
 
 button:focus {
   outline: none;
 }
 
+.slow .toggle-group {
+  transition: left 0.7s;
+  -webkit-transition: left 0.7s;
+}
+
 #one {
-  background-color: #F9E201;
+  background-color: yellow;
 }
 
 #two {
-  background-color: #006FE5;
+  background-color: blue;
 }
 
 #three {
-  background-color: #E50000;
+  background-color: red;
 }
 
 #four {
-  background-color: #42E500;
+  background-color: green;
 }
 /*# sourceMappingURL=style.css.map */

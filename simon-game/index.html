@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Simon Game</title>
@@ -8,16 +8,22 @@
   <link rel='stylesheet prefetch' href='https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css'>
   <link rel="stylesheet" href="scss/style.css">
 </head>
-
 <body>
-  <button id="reset" onclick="reset(true)">reset</button>
-  <button id="strt" onclick="addRound()">start</button>
+  <div>
+    <button id="reset" onclick="reset(true)">reset</button>
+    <button id="strt" onclick="addRound()">start</button>
+  </div>
+  <div>
+    <button class="one" onclick="game(this)" id="one"></button>
+    <button class="two" onclick="game(this)" id="two"></button>
+    <button class="three" onclick="game(this)" id="three"></button>
+    <button class="four" onclick="game(this)" id="four"></button>
+  </div>
   <input id="c" value="0"></input>
-  <button class="gameButton one" onclick="game(this)" id="one">yellow</button>
-  <button class="gameButton two" onclick="game(this)" id="two">blue</button>
-  <button class="gameButton three" onclick="game(this)" id="three">red</button>
-  <button class="gameButton four" onclick="game(this)" id="four">green</button>
+  <p>Strict Mode</p>
   <input id="strictmode" type="checkbox" checked="checked" data-toggle="toggle" data-onstyle="info" data-offstyle="danger" data-on="ON" data-off="OFF" data-style="slow">
+
+
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>

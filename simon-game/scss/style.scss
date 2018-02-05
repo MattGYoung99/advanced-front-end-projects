@@ -1,26 +1,28 @@
 button {
   height: 5em;
   width: 5em;
-  border: 1px solid #000;
-  border-radius: 40px;
-  &:focus {
-    outline: none;
+    &:focus {
+      outline: none;
+    }
   }
-}
+  
+  .slow .toggle-group { 
+    transition: left 0.7s; 
+    -webkit-transition: left 0.7s;
+  }
 
-.slow .toggle-group { 
-  transition: left 0.7s; 
-  -webkit-transition: left 0.7s;
-}
-#one {
-  background-color: #F9E201;
-}
-#two {
-  background-color: #006FE5;
-}
-#three {
-  background-color: #E50000;
-}
-#four {
-  background-color: #42E500;
-}
+  #one {
+    background-color: yellow;
+  }
+
+  #two {
+    background-color: blue;
+  }
+
+  #three {
+    background-color: red;
+  }
+
+  #four {
+    background-color: green;
+  }
