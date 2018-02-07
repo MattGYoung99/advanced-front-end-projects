@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="scss/style.css">
 </head>
 <body>
+    <!-- 
   <div>
     <button id="reset" onclick="reset(true)">reset</button>
     <button id="strt" onclick="addRound()">start</button>
@@ -22,8 +23,31 @@
   <input id="c" value="0"></input>
   <p>Strict Mode</p>
   <input id="strictmode" type="checkbox" checked="checked" data-toggle="toggle" data-onstyle="info" data-offstyle="danger" data-on="ON" data-off="OFF" data-style="slow">
-
-
+-->
+<div class="container">
+    <div class="header">
+        <h1></h1>
+    </div>
+    <div class="simonBoard ">
+            <button class="pad green" onclick="game(this)" id="one"></button>
+            <button class="pad red" onclick="game(this)" id="two"></button>
+            <button class="pad yellow" onclick="game(this)" id="three"></button>
+            <button class="pad blue" onclick="game(this)" id="four"></button>
+    <div class="board-controls">
+            <div class="title">SIMON</div>
+            <input class="display inline" id="c" value="0"></input>
+            <button id="startmode" class="start inline" onclick="addRound()">START</button>
+            <button id="strictmode" class="strict inline">STRICT</button>
+            <div class="switch-container">
+                <input id="powermode" type="checkbox" data-toggle="toggle" data-onstyle="info" data-offstyle="danger" data-on="ON" data-off="OFF" data-style="slow">
+            </div>
+        </div>
+      </div>
+ </div>
+  <audio id="onesound" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></audio>
+  <audio id="twosound" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></audio>
+  <audio id="threesound" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></audio>
+  <audio id="foursound" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></audio>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
