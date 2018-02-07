@@ -46,23 +46,39 @@
       -moz-border-radius: 300px 0 0 0;
       border-radius: 300px 0 0 0;    
   }
-  
+
+  .green:active {
+    background-color: #177200;
+  }
+
   .red {
     background-color: red;
     -moz-border-radius: 0 300px 0 0;
     border-radius: 0 300px 0 0;
   }
   
+  .red:active {
+    background-color: #bb0000;
+  }
+
   .yellow {
     background-color: yellow;
     -moz-border-radius: 0 0 0 300px;
     border-radius: 0 0 0 300px;
   }
 
+  .yellow:active {
+    background-color: #c9b500;
+  }
+
   .blue {
     background-color: blue;
     -moz-border-radius: 0 0 300px 0;
     border-radius: 0 0 300px 0;
+  }
+
+  .blue:active {
+    background-color: #0004e2;
   }
 
   .board-controls {

@@ -114,6 +114,7 @@ $(document).ready(function() {
       if ($(this).prop('checked')) {
         console.log('checked');
         $('#one, #two, #three, #four, #startmode, #strictmode, #c').prop('disabled',false);
+        gameOnOff = true;
       } else {
         console.log('not checked');
         sequence = [];
@@ -121,6 +122,7 @@ $(document).ready(function() {
         round = sequence.length;
         document.getElementById('c').value = sequence.length;
         $('#one, #two, #three, #four, #startmode, #strictmode, #c').prop('disabled',true);
+        gameOnOff = false;
       }
     });
   });
